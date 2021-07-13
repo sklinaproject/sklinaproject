@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ezinsurance-config
+  namespace: ezinsurance
+data:
+  # maribdb 접속정보
+  datasource.schema: "ezins"
+  datasource.username: "sklina"
+  datasource.password: "123456"
+  api.url.payment: http://paymemt:8080
+  alarm.prefix: Hello
